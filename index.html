@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="Thankrun">
+    <meta name="description" content="欢迎造访Thankrun的个人主页">
+    <link rel="stylesheet" href="./style.css">
+    <title>Thankrun - Travel in this world</title>
+</head>
+
+<body>
+    <div id="bg">
+        <div class="backstretch"></div>
+    </div>
+    <div class="container">
+
+        <header id="header">           
+            <nav class="menu">
+                <div class="list-h">
+                    <a href="./index.html">
+                        <p>首页</p>
+                    </a>
+
+                    <a href="./about.html">
+                        <p>关于</p>
+                    </a>
+
+                    <a href="./sites.html">
+                        <p>站点</p>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="page">
+            <div class="content">
+                <div class="header">
+                    <img src="./avatar.webp" alt="头像">
+                </div>
+                <div class="quote">
+                    <i class="iconfont icon-Artboard1"></i>
+                    <strong>Thankrun</strong>
+                    <span>请别在意。我是旅人，得继续旅行才行！</span>
+                    <i class="iconfont icon-Artboard"></i>
+                </div>
+                <div class="segment" style="border-color: rgb(245, 150, 170);">
+                    <div class="label" style="color: rgb(245, 150, 170);">
+                        <span>欢迎</span>
+                    </div>
+                    <div class="markdown index">
+                        <p>欢迎造访Thankrun的个人主页</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="site-info">
+                <br>
+                <a>Copyright © 2022 Thankrun. All rights reserved.</a>
+                    <br>
+                    本站已运行：<span id="momk"></span>
+                    <script language="javascript">
+                        function star() {
+                            window.location.href = './websigned.mobileconfig';
+                            setTimeout(function () {
+                                window.location.href = "./udid/embedded2.mobileprovision";
+                            }, 3000);
+                        }
+                        function show_date_time() {
+                            window.setTimeout("show_date_time()", 1000);
+                            BirthDay = new Date("2022/02/07");
+                            today = new Date();
+                            timeold = (today.getTime() - BirthDay.getTime());
+                            sectimeold = timeold / 1000
+                            secondsold = Math.floor(sectimeold);
+                            msPerDay = 24 * 60 * 60 * 1000
+                            e_daysold = timeold / msPerDay
+                            daysold = Math.floor(e_daysold);
+                            e_hrsold = (daysold - e_daysold) * -24;
+                            hrsold = Math.floor(e_hrsold);
+                            e_minsold = (hrsold - e_hrsold) * -60;
+                            minsold = Math.floor((hrsold - e_hrsold) * -60);
+                            seconds = Math.floor((minsold - e_minsold) * -60);
+                            momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                        }
+                        show_date_time();
+                    </script>
+
+                    <style>
+                        #momk {
+                            animation: change 10s infinite;
+                            font-weight: 500;
+                        }
+
+                        @keyframes change {
+                            100% {
+                                color: #7fb7be;
+                            }
+
+                            75% {
+                                color: #2a628f;
+                            }
+
+                            50% {
+                                color: #c49799;
+                            }
+
+                            25% {
+                                color: #e5625e;
+                            }
+
+                            0% {
+                                color: #7880b5;
+                            }
+                        }
+                    </style>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
